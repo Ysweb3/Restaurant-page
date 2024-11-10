@@ -1,5 +1,6 @@
+const RenderHome = () => {
 const contentDiv = document.getElementById("content");
-
+contentDiv.textContent = "";
 //Heading
 const heading = document.createElement("h1");
 heading.textContent = "Pepper Pot Cafe";
@@ -19,3 +20,5 @@ textBox.appendChild(textP1);
 const textP2 = document.createElement("p");
 textP2.textContent = "The cafe's menu features a delightful array of dishes infused with the perfect balance of pepper-inspired spices, adding a zesty twist to classic favorites. Whether you're in the mood for a hearty breakfast, a satisfying lunch, or a relaxing dinner, Pepper Pot Cafe has something to satisfy every craving";
 textBox.appendChild(textP2);
+}
+export default RenderHome;
