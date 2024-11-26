@@ -1,20 +1,20 @@
 import "./styles.css";
 
-import RenderHome from "./home"
-import RenderMenu from "./menu"
-import RenderAbout from "./about"
+import renderHome from "./home"
+import renderMenu from "./menu"
+import renderAbout from "./about"
 
 const homeBtn = document.getElementById("home-btn");
 const menuBtn = document.getElementById("menu-btn");
 const aboutBtn = document.getElementById("about-btn");
 
 homeBtn.addEventListener("click",() =>{
-    RenderHome();
+    renderHome();
 });
 menuBtn.addEventListener("click",() =>{
-    RenderMenu();
+    renderMenu();
 });
 aboutBtn.addEventListener("click",() =>{
-    RenderAbout();
+    renderAbout();
 });
-RenderHome();
+renderHome();

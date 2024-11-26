@@ -1,7 +1,7 @@
 body{
-    background-image: url(./assets/img/view-bowls-with-spices-assortment.jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
+    background-image: url(view-bowls-with-spices-assortment.jpg);
+    background-size:cover;
+    background-repeat:no-repeat; 
     color: rgb(255, 255, 255);
     text-align: center;
 }
@@ -12,24 +12,33 @@ header{
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.201);
     backdrop-filter: blur(2px);
-    height: 30px;
+    height: 80px;
 
 }
 nav{
-    width: 100px;
+    width: 200px;
+    height: 50px;
     border: 2px rgb(255, 170, 0) solid; 
     margin: 5px;
+
 }
-nav:hover{
+button:hover{
     cursor: pointer;
+}
+button:active{
+    transform: scale(0.9);
 }
 button{
     background-color: rgba(0, 0, 0, 0.201);
     backdrop-filter: blur(5px);
     border: none;
+    border-radius: 5px;
     color: white;
-    width: 100px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
 }
+
 #content{
   display: flex;
   flex-direction: column;
@@ -37,7 +46,8 @@ button{
   align-items: center;
 }
 #text-content{
-    width: 400px;
+    width: 800px;
+    padding: 40px;
     border: 6px rgb(255, 170, 0) double;
     background-color: rgba(0, 0, 0, 0.201);
     backdrop-filter: blur(5px);
@@ -47,4 +57,36 @@ h1{
     backdrop-filter: blur(5px);
     padding: 10px;
     border-radius: 10px;
+    font-size: 50px;
+}
+.food-img{
+    /* border: 2px solid black; */
+    border-top: 4px solid rgba(0, 0, 0, 0.574);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.574);
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+#menu{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px 250px ;
+}
+.food-img{
+    background-color: rgba(0, 0, 0, 0.201);
+    backdrop-filter: blur(1px);
+}
+.food-img:hover {
+    background-color: beige;
+  
+}
+#text-content > p {
+    padding: 10px;
+    font-size: 30px;
+}
+.food-img + p{
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Georgia,Arial;
 }
