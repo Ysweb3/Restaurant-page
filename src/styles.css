@@ -90,3 +90,17 @@ h1{
     font-weight: 500;
     font-family: Georgia,Arial;
 }
+#map-container{
+    padding: 40px;
+    border: 6px rgb(255, 170, 0) double;
+    background-color: rgba(0, 0, 0, 0.201);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+
+}
+.map-img{
+    height: 500px;
+    width: 1000px;
+}
